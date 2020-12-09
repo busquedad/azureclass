@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ar">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <link rel="stylesheet" type="text/css" href="css\stylesheet.css">
+  <meta charset="utf-8" name="description"
+    content="Bienvenido a este pequeño test sobre mis facultades con HTML y CSS" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/page.ico">
+  <title>Aplicaciones - Facundo Duart</title>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+
+  <header>
+    <div class="logo"><img src="img/Logo.jpg" alt="Logotipo" width="50"></div>
+    <h1>Mi Web</h1>
+  </header>
+
+  <section class="wrapper">
+    <section class="main">
+      <table>
+        <tr>
+          <td>
+            <h2>primer juego web</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Dibujo en canvas</h2>
+            <div>
+              <p>
+                <label for="lineasDeTexto">Cuantas lineas quieres:</label> <br />
+                <input type="text" id="lineasDeTexto" placeholder="ingresa un numero" maxlength="3" />
+                <input type="button" value="A darle!" id="boton" />
+              </p>
+              <canvas width="300" height="300" id="dibujo"></canvas>
+              <script src="script/canvasdraw.js"></script>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </section>
+
+  <footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <hr/>
+    <cite>Duart Facundo - all rights reserved © 2020</cite>
+    <script src="script/gototop.js"></script>
+  </footer>
+
 </body>
 
 </html>
